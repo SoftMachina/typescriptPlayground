@@ -21,6 +21,7 @@ export class Employee implements IEmployee {
 
     setSalary = (newSalary: number) :number => this.salary = newSalary;
 
+    // @ts-ignore
     updateEmployee = (e: Employee) => Object.keys(this).forEach(key => this[key] = e[key]); 
 
 
